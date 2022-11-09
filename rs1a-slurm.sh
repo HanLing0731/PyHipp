@@ -15,11 +15,19 @@
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 python -u -c "import PyHipp as pyh; \
 import DataProcessingTools as DPT; \
+<<<<<<< HEAD
 import time; \
 import os; \
 t0 = time.time(); \
 print(time.localtime()); \
 DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[*range(1,33)], SkipHPC=False, HPCScriptsDir = '/data/src/PyHipp/', SkipLFP=False, SkipHighPass=False, SkipSort=False); \
+=======
+import os; \
+import time; \
+t0 = time.time(); \
+print(time.localtime()); \
+DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[*range(1,33)], SkipHPC=False, HPCScriptsDir='/data/src/PyHipp/', SkipLFP=False, SkipHighPass=False, SkipSort=False); \
+>>>>>>> upstream/main
 print(time.localtime()); \
 print(time.time()-t0);"
 
